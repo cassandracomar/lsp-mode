@@ -643,6 +643,7 @@ https://rust-analyzer.github.io/manual.html#auto-import.
                   :command ,lsp-rust-analyzer-cargo-watch-command
                   :extraArgs ,lsp-rust-analyzer-cargo-watch-args
                   :allTargets ,(lsp-json-bool lsp-rust-analyzer-cargo-all-targets)
+                  :features ,lsp-rust-features
                   :overrideCommand ,lsp-rust-analyzer-cargo-override-command)
     :files (:exclude ,lsp-rust-analyzer-exclude-globs
             :watcher ,(lsp-json-bool (if lsp-rust-analyzer-use-client-watching
